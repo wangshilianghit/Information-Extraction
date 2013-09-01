@@ -1,0 +1,21 @@
+Guannan Ren and Shiliang Wang
+Email: gren3@jhu.edu and wangshiliang@jhu.edu
+Information Retrieval Assignment 4
+Web Robot
+
+Part 1.
+The program "lwp_parser.pl" was changed to satisfy the requirements for part 1 of the assignment
+The program will only traverse links that are local and non-self-referencing.
+
+Command Line syntax: ./lwp_parser.pl __search_url__
+
+
+Part 2.
+The program "robot_base.pl" was changed to satisfy part 2 of the assignment
+The program was edited to ensure that only local and non-self-referencing links were considered
+The program further modified to return pdf and postscript links in wanted_url array. The wanted url array would then be printed to the file link.txt
+The extract_information method was used to return any phone number, email address, and city address. The output can be found in the content file. If more than one item exist on webpage, we used a while loop to retrieve all of the items and print them. We ordered them by phone number, email, and then, place.
+Finally the method grab_urls was used to rank the relevance of a link. The revelance of the link depends on its reg_text matching with the base url's contents, on the number of backslash character, and on the number of junk characters ($,%,=,?,&). Different weights are assigned to each weighting scheme. Note, common words were extracted from the base url's content.
+
+
+Command Line syntax: ./robot_base.pl __log_file__ __content_file__ ___search_url__
