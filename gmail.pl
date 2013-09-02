@@ -16,8 +16,8 @@ my %email_vector = ();
 my $outfile = 'email_read.txt';
 
 # fill in your details here
-my $username = 'wangshilianghit@gmail.com';
-my $password = 'wodeyiqie@111';
+my $username = '';
+my $password = '';
 my $mailhost = 'pop.gmail.com';
 
 # Connect

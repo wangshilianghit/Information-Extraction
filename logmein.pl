@@ -23,8 +23,8 @@ $ua->agent('Mozilla/8.0');
 # my $content = check_response($req_url);
 # print $content;
 
-my $username = 'swang129'; 
-my $password = 'Study@littlebird13';
+my $username = ''; 
+my $password = '';
 my $mech = WWW::Mechanize->new();
 my $outfile = "output.html";
 $mech -> cookie_jar(HTTP::Cookies->new());
